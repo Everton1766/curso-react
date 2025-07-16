@@ -12,16 +12,18 @@ function TaskPage() {
     <div className="h-screen w-screen  bg-slate-500 p-6">
       <div className="w-screen h-screen bg-slate-500 flex justify-center p-6 ">
         <div className="w-[500px] space-y-4">
-          <div className="flex items-center justify-between relative">
+          <div className="relative h-[60px] flex items-center justify-center">
             <button
               onClick={() => navigate(-1)}
-              className="p-3 bg-slate-400 rounded-md text-white"
+              className=" absolute left-0 p-3 bg-slate-200 rounded-md "
             >
               <ChevronLeftIcon />
             </button>
-            <Title>Detalhe da Tarefa</Title>
+            <Title className="text-2xl font-bold text-center text-slate-100">
+              Detalhe da Tarefa
+            </Title>
           </div>
-          <div className="bg-slate-400 p-6 rounded-md shadow-md">
+          <div className="bg-slate-200 p-6 rounded-md shadow-md">
             <h2 className="text-xl font-bold">{title}</h2>
             <p className=" mt-2">{description}</p>
           </div>
